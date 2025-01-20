@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senntiment Analysis</title>
+</head>
+<body>
+    <h1>Sentiment Analysis</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="new_input">Enter text to analyze</label>
+        <input type="text" name="new_input" id="new_input" placeholder="Enter text to analyze">
+        <button type="submit">Analyze</button>
+    </form>
+
+    <h2>Results</h2>
+    {% if result is not None %}
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
