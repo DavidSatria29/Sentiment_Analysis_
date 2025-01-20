@@ -68,6 +68,16 @@ The dataset contains information about product reviews, including:
    ```bash
    pip install -r requirements.txt
    ```
+4. Running migration and web
+In the same directory as the 'manage.py' directory. run the command on the terminal 
+
+```bash
+py manage.py migrate
+
+```
+```bash
+py manage.py runserver
+```
 
 ## Usage
 1. Load the dataset using Pandas.
