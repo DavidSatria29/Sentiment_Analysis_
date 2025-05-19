@@ -67,6 +67,7 @@ The dataset contains information about product reviews, including:
 3. Install dependencies:
    ```bash
    pip install -r requirements.txt
+   python nltk_resources.py
    ```
 4. Running migration and web
 In the same directory as the 'manage.py' directory. run the command on the terminal 
